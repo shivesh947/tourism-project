@@ -47,9 +47,8 @@ background-attachment: fixed;
 } 
 .d1
 {
-    height: 60vh;
+    height: 100%;
     background-image: url('./images/opt.jpg');
-  
 }
 .info
 {
