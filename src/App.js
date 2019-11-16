@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import Form from './components/registerationform';
 import Home from './components/home';
 import Navbar from './components/navbar';
-import {BrowserRouter,Route} from 'react-router-dom';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import Tourism from './components/tourismform';
 import Add from './components/addtourist';
 import Footer from './components/footer';
@@ -28,7 +28,7 @@ class App extends Component
      <BrowserRouter>
      <Navbar/>
 
-     <switch>
+     <Switch>
      <Route path="/" exact render={() => <Home tour={this.state.tour}/>}/>
      <Route path="/Home" render={() => <Home tour={this.state.tour}/>}/>
      <Route path="/Form" component={Form}/>
@@ -37,7 +37,7 @@ class App extends Component
      <Route path="/state" render={() => <States tour={this.state.tour}/>}/>
      <Route path="/statedisplay" component={Statedisplay}/>
      <Route path="/gallery" component={Gallery}/>
-     </switch>
+     </Switch>
 
      <Footer/>
      </BrowserRouter>      
