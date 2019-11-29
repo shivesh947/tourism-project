@@ -1,0 +1,12 @@
+.row{
+    margin-right: 0px;
+}
+#ssearch{
+    z-index: 100;
+    margin-top: -15px;
+    position: absolute;
+    margin-left: 35vw;
+    width: 30vw;
+    height: 30px;
+    border-radius: 5px;
+}
